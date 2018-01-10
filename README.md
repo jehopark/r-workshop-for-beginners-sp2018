@@ -1,1 +1,1 @@
-# r-workshop-for-beginners-sp2018
+# R Workshop for Beginners, January 2018
