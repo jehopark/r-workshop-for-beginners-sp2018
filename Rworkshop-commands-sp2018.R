@@ -1,4 +1,4 @@
-## R for Beginners SP2017
+## R for Beginners
 ## HMC Scientific Computing Workshop
 
 #Look Ma, R can do Math!  ---------
@@ -69,6 +69,7 @@ df <- data.frame(n, s, b) # a data frame
 df
 mtcars # a built-in (attached) data frame
 mtcars$mpg
+plot(mtcars$mpg, mtcars$hp) # what to expect?
 
 # Continued
 myFrame <- data.frame(y1=rnorm(100),y2=rnorm(100), y3=rnorm(100))
@@ -126,7 +127,7 @@ df <- as.data.frame(mat)
 df
 
 # Data Import ------
-cpds <- read.csv(file.path('.', 'data', 'cpds.csv'))
+cpds <- read.csv(file.path('.', 'data', 'cpds.csv')) # Comparative Political Data Set (http://www.cpds-data.org/)
 head(cpds) # good to look at a few lines
 class(cpds) # data.frame
 
@@ -134,16 +135,6 @@ class(cpds) # data.frame
 
 data <- read.table(file="http://scicomp.hmc.edu/data/R/normtemp.txt", header=T)
 tail(data)
-
-rta <- read.table("./data/RTADataSub.csv", sep = ",", head = TRUE)
-dim(rta)
-rta[1:5, 1:5]
-class(rta)
-class(rta$time) # what? let's see ?read.table more carefully
-
-
-rta2 <- read.table("./data/RTADataSub.csv", sep = ",", head = TRUE, stringsAsFactors = FALSE)
-class(rta2$time)
 
 
 # Data (and plot) Export ------

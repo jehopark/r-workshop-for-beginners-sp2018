@@ -1,4 +1,4 @@
-## R for Beginners SP2017
+## R for Beginners
 ## HMC Scientific Computing Workshop
 
 #Look Ma, R can do Math!  ---------
@@ -69,6 +69,7 @@ df <- data.frame(n, s, b) # a data frame
 df
 mtcars # a built-in (attached) data frame
 mtcars$mpg
+plot(mtcars$mpg, mtcars$hp) # what to expect?
 
 # Continued
 myFrame <- data.frame(y1=rnorm(100),y2=rnorm(100), y3=rnorm(100))
